@@ -1,0 +1,158 @@
+/* Style général */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+     /* Nouvelle police élégante */
+    background: url('../assets/flamme1.gif') ;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-color: #ff7f50; /* Fond orange */
+    text-align: center;
+    color: #ffffff; /* Texte blanc */
+}
+
+
+/* Conteneur général */
+.container {
+    padding: 20px;
+}
+
+/* Titre de la page */
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #ff4500; /* Effet d'ombre */
+}
+
+/* Conteneur pour chaque catégorie */
+.category-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Texte du titre */
+.category-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px #000;
+}
+
+/* Bouton rotatif */
+.rotating-button {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease, border-color 0.3s ease;
+    cursor: pointer;
+    border: 5px solid #fff; /* Cercle blanc par défaut */
+}
+
+/* Couleurs de contour */
+.rotating-button[data-position="0"] {
+    border-color: #ffeb3b; /* Jaune */
+}
+
+.rotating-button[data-position="1"] {
+    border-color: #ff9800; /* Orange */
+}
+
+.rotating-button[data-position="2"] {
+    border-color: #f44336; /* Rouge */
+}
+
+/* Texte au centre du bouton */
+.rotating-button span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Bouton rond centré */
+.button-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Bouton rond animé */
+#rotating-button {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* S'assurer que l'image reste ronde */
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out; /* Animation fluide */
+}
+
+
+
+/* Section vidéo */
+#videoSection {
+    margin-top: 40px;
+}
+
+#randomVideoButton {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff7f50; /* Texte orange */
+    background-color: #ffffff; /* Bouton blanc */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Effet 3D */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#randomVideoButton:hover {
+    background-color: #ff4500; /* Couleur plus vive au survol */
+    color: #ffffff; /* Texte blanc */
+    transform: scale(1.1); /* Légère mise en avant */
+}
+
+#videoContainer {
+    margin-top: 20px;
+}
+
+.filter-button {
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #e65a00;
+}
+
+.filter-button.active {
+    background-color: #ff6f00;
+}
+
+.filter-button:not(.active) {
+    background-color: #ccc;
+    color: #666;
+}
