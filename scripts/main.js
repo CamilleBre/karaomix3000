@@ -3,14 +3,22 @@ const rotatingButton = document.getElementById("rotating-button");
 const randomVideoButton = document.getElementById("randomVideoButton");
 const videoContainer = document.getElementById("videoContainer");
 const filtersContainer = document.getElementById("filtersContainer");
+const rotatingButtonContainer = document.getElementById("rotatingButtonsContainer");
 
 // Variables globales
-let allVideos = []; // Stocke toutes les vidéos chargées
-let filteredVideos = []; // Stocke les vidéos filtrées
-let activeFilters = { language: new Set(), categories: new Set() }; // Garde les filtres activés
+let allVideos = [];
+let filteredVideos = [];
+let activeFilters = { language: new Set(), categories: new Set() };
+
+const categories = [
+    { name: "difficulty", values: ["Easy", "Ça passe", "Hardcore"] },
+    { name: "cheese_factor", values: ["No", "Plaisir coupable", "Kitsch"] },
+    { name: "unexpected_factor", values: ["Surprise garantie", "Prévisible", "Tube"] },
+    { name: "heartbreak_level", values: ["Pas triste", "Cœur brisé à 30%", "Larmes garanties"] }
+];
 
 // Positions pour le bouton rond
-const positions = [0, 90, 200];
+const positions = [0, 95, 135, 200];
 let currentIndex = 0;
 
 // Charger les vidéos depuis un fichier JSON
@@ -18,8 +26,8 @@ async function loadVideos() {
     try {
         const response = await fetch("videos.json");
         allVideos = await response.json();
-        filteredVideos = allVideos; // Toutes les vidéos sont activées par défaut
-        createFilters(allVideos); // Crée les boutons de filtres
+        filteredVideos = allVideos;
+        createFilters(allVideos);
     } catch (error) {
         console.error("Erreur lors du chargement des vidéos :", error);
     }
@@ -27,31 +35,18 @@ async function loadVideos() {
 
 // Crée les boutons de filtres dynamiques
 function createFilters(videos) {
-    const languages = [...new Set(videos.map(video => video.language))]; // Langues uniques
-    const categories = [...new Set(videos.flatMap(video => video.categories))]; // Catégories uniques
+    const languages = [...new Set(videos.map(video => video.language))];
 
-    filtersContainer.innerHTML = "<h3>Filtres :</h3><div id='languageFilters'></div><div id='categoryFilters'></div>";
+    filtersContainer.innerHTML = "<div id='languageFilters'></div>";
     const languageFilters = document.getElementById("languageFilters");
-    const categoryFilters = document.getElementById("categoryFilters");
 
-    // Crée les boutons pour les langues
     languages.forEach(language => {
         const button = document.createElement("button");
         button.className = "filter-button active";
         button.innerText = language;
-        activeFilters.language.add(language); // Active par défaut
+        activeFilters.language.add(language);
         button.addEventListener("click", () => toggleFilter("language", language, button));
         languageFilters.appendChild(button);
-    });
-
-    // Crée les boutons pour les catégories
-    categories.forEach(category => {
-        const button = document.createElement("button");
-        button.className = "filter-button active";
-        button.innerText = category;
-        activeFilters.categories.add(category); // Active par défaut
-        button.addEventListener("click", () => toggleFilter("categories", category, button));
-        categoryFilters.appendChild(button);
     });
 }
 
@@ -59,7 +54,6 @@ function createFilters(videos) {
 function toggleFilter(filterType, filterValue, button) {
     const isActive = activeFilters[filterType].has(filterValue);
 
-    // Ajoute ou retire le filtre
     if (isActive) {
         activeFilters[filterType].delete(filterValue);
         button.classList.remove("active");
@@ -75,8 +69,7 @@ function toggleFilter(filterType, filterValue, button) {
 function applyFilters() {
     filteredVideos = allVideos.filter(video => {
         const matchesLanguage = activeFilters.language.has(video.language);
-        const matchesCategory = video.categories.some(category => activeFilters.categories.has(category));
-        return matchesLanguage && matchesCategory;
+        return matchesLanguage;
     });
 
     displayRandomVideo();
@@ -92,31 +85,50 @@ function displayRandomVideo() {
     const randomIndex = Math.floor(Math.random() * filteredVideos.length);
     const selectedVideo = filteredVideos[randomIndex];
 
-    // Afficher uniquement le lien vers la vidéo sans l'intégrer
     videoContainer.innerHTML = `
         <h2>${selectedVideo.title}</h2>
         <p>Langue : ${selectedVideo.language}</p>
         <p>Catégories : ${selectedVideo.categories.join(", ")}</p>
         <p>Set Thermomix : ${selectedVideo.setThermomix ? "Oui" : "Non"}</p>
     `;
+}
 
-    // Ouvrir directement la vidéo sur YouTube dans un nouvel onglet
-    randomVideoButton.addEventListener("click", () => {
-        window.open(selectedVideo.url, "_blank"); // Ouvre l'URL de la vidéo dans un nouvel onglet
+// Créer les boutons rotatifs pour chaque catégorie
+function createRotatingButtons() {
+    categories.forEach(category => {
+        const categoryContainer = document.createElement("div");
+        categoryContainer.classList.add("category-container");
+
+        const categoryTitle = document.createElement("h3");
+        categoryTitle.classList.add("category-title");
+        categoryTitle.textContent = category.name.charAt(0).toUpperCase() + category.name.slice(1).replace(/_/g, " ");
+        categoryContainer.appendChild(categoryTitle);
+
+        const button = document.createElement("div");
+        button.classList.add("rotating-button");
+        button.dataset.position = 0;
+
+        const buttonText = document.createElement("span");
+        buttonText.textContent = category.values[0];
+        button.appendChild(buttonText);
+
+        button.addEventListener("click", () => {
+            let currentPosition = parseInt(button.dataset.position, 10);
+            currentPosition = (currentPosition + 1) % category.values.length;
+            button.dataset.position = currentPosition;
+
+            buttonText.textContent = category.values[currentPosition];
+            button.classList.remove("rotating-button");
+            button.classList.add("rotating-button");
+        });
+
+        categoryContainer.appendChild(button);
+        rotatingButtonContainer.appendChild(categoryContainer);
     });
 }
 
-// Gestion du bouton rond avec rotation
-rotatingButton.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % positions.length;
-    rotatingButton.style.transform = `rotate(${positions[currentIndex]}deg)`;
-});
-
-// Bouton pour afficher une nouvelle vidéo
-randomVideoButton.addEventListener("click", displayRandomVideo);
-
-// Charger les vidéos et afficher la première vidéo
-document.addEventListener("DOMContentLoaded", async () => {
-    await loadVideos();
-    displayRandomVideo();
+// Appel au chargement de la page
+document.addEventListener("DOMContentLoaded", () => {
+    loadVideos();
+    createRotatingButtons();
 });
