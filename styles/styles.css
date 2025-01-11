@@ -1,8 +1,24 @@
-/* Style général */
+/* Couleurs de contour */
+.rotating-button[data-position="0"] {
+    border-color: white; /* Blanc */
+}
+
+.rotating-button[data-position="1"] {
+    border-color: #ffeb3b; /* Jaune */
+}
+
+.rotating-button[data-position="2"] {
+    border-color: #ff9800; /* Orange */
+}
+
+.rotating-button[data-position="3"] {
+    border-color: #f44336; /* Rouge */
+}
+
+/* Conteneur général */
 body {
     font-family: 'Poppins', Arial, sans-serif;
-     /* Nouvelle police élégante */
-    background: url('../assets/flamme1.gif') ;
+    background: url('../assets/flamme1.gif');
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -11,8 +27,7 @@ body {
     color: #ffffff; /* Texte blanc */
 }
 
-
-/* Conteneur général */
+/* Conteneur principal */
 .container {
     padding: 20px;
 }
@@ -27,19 +42,28 @@ header h1 {
     text-shadow: 2px 2px #ff4500; /* Effet d'ombre */
 }
 
-/* Conteneur pour chaque catégorie */
+/* Conteneur des catégories de boutons rotatifs */
+#rotatingButtonsContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Conteneur de chaque bouton avec clé et valeur */
 .category-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 10px;
 }
 
-/* Texte du titre */
+/* Titre de la catégorie (clé) */
 .category-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 5px;
 }
 
 /* Bouton rotatif */
@@ -59,50 +83,26 @@ header h1 {
     border: 5px solid #fff; /* Cercle blanc par défaut */
 }
 
-/* Couleurs de contour */
-.rotating-button[data-position="0"] {
-    border-color: #ffeb3b; /* Jaune */
-}
-
-.rotating-button[data-position="1"] {
-    border-color: #ff9800; /* Orange */
-}
-
-.rotating-button[data-position="2"] {
-    border-color: #f44336; /* Rouge */
+/* Image de fond du bouton */
+.rotating-button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 /* Texte au centre du bouton */
 .rotating-button span {
+    position: absolute;
     font-size: 1rem;
     font-weight: bold;
     color: #000;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-/* Bouton rond centré */
-.button-container {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+/* Bouton "All" */
+.rotating-button.all {
+    background-color: #ddd;
 }
-
-/* Bouton rond animé */
-#rotating-button {
-    width: 100%;
-    height: auto;
-    border-radius: 50%; /* S'assurer que l'image reste ronde */
-    cursor: pointer;
-    transition: transform 0.5s ease-in-out; /* Animation fluide */
-}
-
-
 
 /* Section vidéo */
 #videoSection {

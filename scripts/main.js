@@ -11,10 +11,10 @@ let filteredVideos = [];
 let activeFilters = { language: new Set(), categories: new Set() };
 
 const categories = [
-    { name: "difficulty", values: ["Easy", "Ça passe", "Hardcore"] },
-    { name: "cheese_factor", values: ["No", "Plaisir coupable", "Kitsch"] },
-    { name: "unexpected_factor", values: ["Surprise garantie", "Prévisible", "Tube"] },
-    { name: "heartbreak_level", values: ["Pas triste", "Cœur brisé à 30%", "Larmes garanties"] }
+    { name: "difficulty", values: ["", "Easy", "Ça passe", "Hardcore"] },
+    { name: "cheese_factor", values: ["", "No", "Plaisir coupable", "Kitsch"] },
+    { name: "unexpected_factor", values: ["","Surprise garantie", "Prévisible", "Tube"] },
+    { name: "heartbreak_level", values: ["","Pas triste", "Cœur brisé à 30%", "Larmes garanties"] }
 ];
 
 // Positions pour le bouton rond
@@ -87,11 +87,27 @@ function displayRandomVideo() {
 
     videoContainer.innerHTML = `
         <h2>${selectedVideo.title}</h2>
+        <p>Artiste : ${selectedVideo.artist}</p>
         <p>Langue : ${selectedVideo.language}</p>
         <p>Catégories : ${selectedVideo.categories.join(", ")}</p>
-        <p>Set Thermomix : ${selectedVideo.setThermomix ? "Oui" : "Non"}</p>
+        <p>Ambiance : ${selectedVideo.mood}</p>
+        <p>Difficulté : ${selectedVideo.difficulty}</p>
+        <p>Cheese Factor : ${selectedVideo.cheeseFactor}</p>
+        <p>Niveau de surprise : ${selectedVideo.unexpectedFactor}</p>
+        <p>Heartbreak Level : ${selectedVideo.heartbreakLevel}</p>
+        <p>Weirdness : ${selectedVideo.weirdness}</p>
+        <p>Hymne lesbien : ${selectedVideo.lesbianAnthem ? "Oui" : "Non"}</p>
+        <a
+            href="${selectedVideo.url}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="youtube-link"
+        >
+            Regarder sur YouTube
+        </a>
     `;
 }
+
 
 // Créer les boutons rotatifs pour chaque catégorie
 function createRotatingButtons() {
