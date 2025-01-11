@@ -1,12 +1,17 @@
 [
   {
-    "url": "https://www.youtube.com/embed/nj8r7daP3Hs?si=3QfPy3_iPE8AOpfJ",
+    "url": "https://www.youtube.com/watch?v=nj8r7daP3Hs",
     "title": "Tout doucement",
     "artist": "Bibie",
     "language": "French",
     "setThermomix": false,
-    "categories": ["pop", "80s"],
-    "tags": ["classic"],
+    "categories": [
+      "pop",
+      "80s"
+    ],
+    "tags": [
+      "classic"
+    ],
     "mood": "Romantic chill",
     "difficulty": "Easy",
     "era": "80s",
@@ -17,12 +22,15 @@
     "lesbianAnthem": false
   },
   {
-    "url": "https://www.youtube.com/embed/rpaXdIwoSEE?si=wHGvjK8loS7FWilI",
+    "url": "https://www.youtube.com/watch?v=rpaXdIwoSEE",
     "title": "Le monde est stone",
     "artist": "Starmania",
     "language": "French",
     "setThermomix": false,
-    "categories": ["musical", "classic"],
+    "categories": [
+      "musical",
+      "classic"
+    ],
     "tags": [],
     "mood": "Melancholic Drama",
     "difficulty": "Ça passe",
@@ -39,7 +47,10 @@
     "artist": "Céline Dion",
     "language": "French",
     "setThermomix": false,
-    "categories": ["ballad", "90s"],
+    "categories": [
+      "ballad",
+      "90s"
+    ],
     "tags": [],
     "mood": "Melancholic Drama",
     "difficulty": "Hardcore",
@@ -56,7 +67,10 @@
     "artist": "Axelle Red",
     "language": "French",
     "setThermomix": false,
-    "categories": ["pop", "90s"],
+    "categories": [
+      "pop",
+      "90s"
+    ],
     "tags": [],
     "mood": "Romantic chill",
     "difficulty": "Ça passe",
@@ -73,7 +87,10 @@
     "artist": "Adele",
     "language": "English",
     "setThermomix": false,
-    "categories": ["ballad", "pop"],
+    "categories": [
+      "ballad",
+      "pop"
+    ],
     "tags": [],
     "mood": "Melancholic Drama",
     "difficulty": "Hardcore",
@@ -90,7 +107,10 @@
     "artist": "Santa",
     "language": "French",
     "setThermomix": false,
-    "categories": ["pop", "modern"],
+    "categories": [
+      "pop",
+      "modern"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Easy",
@@ -107,7 +127,10 @@
     "artist": "Dalida",
     "language": "French",
     "setThermomix": false,
-    "categories": ["classic", "ballad"],
+    "categories": [
+      "classic",
+      "ballad"
+    ],
     "tags": [],
     "mood": "Melancholic Drama",
     "difficulty": "Hardcore",
@@ -124,7 +147,10 @@
     "artist": "Amel Bent",
     "language": "French",
     "setThermomix": false,
-    "categories": ["pop", "R&B"],
+    "categories": [
+      "pop",
+      "R&B"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Ça passe",
@@ -141,7 +167,10 @@
     "artist": "Véronique Sanson",
     "language": "French",
     "setThermomix": false,
-    "categories": ["classic", "ballad"],
+    "categories": [
+      "classic",
+      "ballad"
+    ],
     "tags": [],
     "mood": "Melancholic Drama",
     "difficulty": "Ça passe",
@@ -158,7 +187,10 @@
     "artist": "Amy Winehouse",
     "language": "English",
     "setThermomix": false,
-    "categories": ["soul", "pop"],
+    "categories": [
+      "soul",
+      "pop"
+    ],
     "tags": [],
     "mood": "Melancholic Drama",
     "difficulty": "Hardcore",
@@ -175,7 +207,10 @@
     "artist": "Rihanna & Jay-Z",
     "language": "English",
     "setThermomix": false,
-    "categories": ["pop", "r&b"],
+    "categories": [
+      "pop",
+      "r&b"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Ça passe",
@@ -192,7 +227,10 @@
     "artist": "Shakira",
     "language": "English",
     "setThermomix": false,
-    "categories": ["pop", "dance"],
+    "categories": [
+      "pop",
+      "dance"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Easy",
@@ -209,7 +247,10 @@
     "artist": "4 Non Blondes",
     "language": "English",
     "setThermomix": false,
-    "categories": ["rock", "90s"],
+    "categories": [
+      "rock",
+      "90s"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Easy",
@@ -226,7 +267,10 @@
     "artist": "ABBA",
     "language": "English",
     "setThermomix": false,
-    "categories": ["pop", "disco"],
+    "categories": [
+      "pop",
+      "disco"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Easy",
@@ -243,7 +287,10 @@
     "artist": "Britney Spears",
     "language": "English",
     "setThermomix": false,
-    "categories": ["pop", "90s"],
+    "categories": [
+      "pop",
+      "90s"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Easy",
@@ -260,7 +307,10 @@
     "artist": "Diam’s",
     "language": "French",
     "setThermomix": false,
-    "categories": ["rap", "hip-hop"],
+    "categories": [
+      "rap",
+      "hip-hop"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Ça passe",
@@ -277,7 +327,10 @@
     "artist": "Mariah Carey",
     "language": "English",
     "setThermomix": false,
-    "categories": ["pop", "Christmas"],
+    "categories": [
+      "pop",
+      "Christmas"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Easy",
@@ -294,7 +347,10 @@
     "artist": "Kalika",
     "language": "French",
     "setThermomix": false,
-    "categories": ["pop", "modern"],
+    "categories": [
+      "pop",
+      "modern"
+    ],
     "tags": [],
     "mood": "Melancholic Drama",
     "difficulty": "Ça passe",
@@ -311,7 +367,10 @@
     "artist": "Koxie",
     "language": "French",
     "setThermomix": false,
-    "categories": ["pop", "rap"],
+    "categories": [
+      "pop",
+      "rap"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Easy",
@@ -328,7 +387,10 @@
     "artist": "Jenifer",
     "language": "French",
     "setThermomix": false,
-    "categories": ["pop", "2000s"],
+    "categories": [
+      "pop",
+      "2000s"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Easy",
@@ -345,7 +407,10 @@
     "artist": "Shy’m",
     "language": "French",
     "setThermomix": false,
-    "categories": ["pop", "R&B"],
+    "categories": [
+      "pop",
+      "R&B"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Ça passe",
@@ -362,7 +427,10 @@
     "artist": "Billie Eilish",
     "language": "English",
     "setThermomix": false,
-    "categories": ["pop", "alternative"],
+    "categories": [
+      "pop",
+      "alternative"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Ça passe",
@@ -379,7 +447,10 @@
     "artist": "Lââm",
     "language": "French",
     "setThermomix": false,
-    "categories": ["pop", "R&B"],
+    "categories": [
+      "pop",
+      "R&B"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Ça passe",
@@ -396,7 +467,10 @@
     "artist": "L5",
     "language": "French",
     "setThermomix": false,
-    "categories": ["pop", "girl group"],
+    "categories": [
+      "pop",
+      "girl group"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Easy",
@@ -413,7 +487,10 @@
     "artist": "Coeur de pirate",
     "language": "French",
     "setThermomix": false,
-    "categories": ["pop", "indie"],
+    "categories": [
+      "pop",
+      "indie"
+    ],
     "tags": [],
     "mood": "Romantic chill",
     "difficulty": "Easy",
@@ -430,7 +507,9 @@
     "artist": "Natasha St Pier",
     "language": "French",
     "setThermomix": false,
-    "categories": ["ballad"],
+    "categories": [
+      "ballad"
+    ],
     "tags": [],
     "mood": "Romantic chill",
     "difficulty": "Easy",
@@ -447,7 +526,9 @@
     "artist": "Lorie",
     "language": "French",
     "setThermomix": false,
-    "categories": ["pop"],
+    "categories": [
+      "pop"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Easy",
@@ -464,7 +545,10 @@
     "artist": "Dua Lipa",
     "language": "English",
     "setThermomix": false,
-    "categories": ["pop", "dance"],
+    "categories": [
+      "pop",
+      "dance"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Easy",
@@ -481,7 +565,10 @@
     "artist": "Sia",
     "language": "English",
     "setThermomix": false,
-    "categories": ["pop", "indie"],
+    "categories": [
+      "pop",
+      "indie"
+    ],
     "tags": [],
     "mood": "Melancholic Drama",
     "difficulty": "Ça passe",
@@ -498,7 +585,10 @@
     "artist": "Olivia Rodrigo",
     "language": "English",
     "setThermomix": false,
-    "categories": ["pop", "ballad"],
+    "categories": [
+      "pop",
+      "ballad"
+    ],
     "tags": [],
     "mood": "Melancholic Drama",
     "difficulty": "Easy",
@@ -515,7 +605,10 @@
     "artist": "Ariana Grande",
     "language": "English",
     "setThermomix": false,
-    "categories": ["pop", "R&B"],
+    "categories": [
+      "pop",
+      "R&B"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Ça passe",
@@ -532,7 +625,10 @@
     "artist": "Nicki Minaj",
     "language": "English",
     "setThermomix": false,
-    "categories": ["hip-hop", "pop"],
+    "categories": [
+      "hip-hop",
+      "pop"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Easy",
@@ -549,7 +645,10 @@
     "artist": "Miley Cyrus",
     "language": "English",
     "setThermomix": false,
-    "categories": ["pop", "country"],
+    "categories": [
+      "pop",
+      "country"
+    ],
     "tags": [],
     "mood": "Romantic chill",
     "difficulty": "Easy",
@@ -566,7 +665,10 @@
     "artist": "No doubt",
     "language": "English",
     "setThermomix": false,
-    "categories": ["rock", "ska"],
+    "categories": [
+      "rock",
+      "ska"
+    ],
     "tags": [],
     "mood": "Melancholic Drama",
     "difficulty": "Easy",
@@ -583,7 +685,10 @@
     "artist": "Katy Perry",
     "language": "English",
     "setThermomix": false,
-    "categories": ["pop", "dance"],
+    "categories": [
+      "pop",
+      "dance"
+    ],
     "tags": [],
     "mood": "Time to party",
     "difficulty": "Easy",
@@ -595,20 +700,23 @@
     "lesbianAnthem": true
   },
   {
-  "url": "https://www.youtube.com/embed/kyrspvxvqCY?si=AnPNnPT4WYyFrD6r",
-  "title": "All the Things She Said",
-  "artist": "t.A.T.u.",
-  "language": "English",
-  "setThermomix": true,
-  "categories": ["pop", "dance"],
-  "tags": [],
-  "mood": "Time to party",
-  "difficulty": "Easy",
-  "era": "2000s",
-  "cheeseFactor": "Plaisir coupable",
-  "unexpectedFactor": "Prévisible",
-  "heartbreakLevel": "Pas triste",
-  "weirdness": "pas chelou",
-  "lesbianAnthem": true
-}
+    "url": "https://www.youtube.com/embed/kyrspvxvqCY?si=AnPNnPT4WYyFrD6r",
+    "title": "All the Things She Said",
+    "artist": "t.A.T.u.",
+    "language": "English",
+    "setThermomix": true,
+    "categories": [
+      "pop",
+      "dance"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Easy",
+    "era": "2000s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Prévisible",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": true
+  }
 ]

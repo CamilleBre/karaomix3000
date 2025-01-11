@@ -170,3 +170,19 @@ header h1 {
     background-color: #ccc;
     color: #666;
 }
+
+.youtube-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff4500;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.youtube-link:hover {
+    background-color: #e63900;
+}

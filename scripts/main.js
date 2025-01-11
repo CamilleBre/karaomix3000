@@ -1,5 +1,4 @@
 // Sélection des éléments HTML
-const rotatingButton = document.getElementById("rotating-button");
 const randomVideoButton = document.getElementById("randomVideoButton");
 const videoContainer = document.getElementById("videoContainer");
 const filtersContainer = document.getElementById("filtersContainer");
@@ -13,20 +12,16 @@ let activeFilters = { language: new Set(), categories: new Set() };
 const categories = [
     { name: "difficulty", values: ["", "Easy", "Ça passe", "Hardcore"] },
     { name: "cheese_factor", values: ["", "No", "Plaisir coupable", "Kitsch"] },
-    { name: "unexpected_factor", values: ["","Surprise garantie", "Prévisible", "Tube"] },
-    { name: "heartbreak_level", values: ["","Pas triste", "Cœur brisé à 30%", "Larmes garanties"] }
+    { name: "unexpected_factor", values: ["", "Surprise garantie", "Prévisible", "Tube"] },
+    { name: "heartbreak_level", values: ["", "Pas triste", "Cœur brisé à 30%", "Larmes garanties"] }
 ];
-
-// Positions pour le bouton rond
-const positions = [0, 95, 135, 200];
-let currentIndex = 0;
 
 // Charger les vidéos depuis un fichier JSON
 async function loadVideos() {
     try {
         const response = await fetch("videos.json");
         allVideos = await response.json();
-        filteredVideos = allVideos;
+        filteredVideos = allVideos; // Initialise avec toutes les vidéos
         createFilters(allVideos);
     } catch (error) {
         console.error("Erreur lors du chargement des vidéos :", error);
@@ -72,7 +67,7 @@ function applyFilters() {
         return matchesLanguage;
     });
 
-    displayRandomVideo();
+    // Ne change pas la vidéo automatiquement ici
 }
 
 // Affiche une vidéo aléatoire parmi les vidéos filtrées
@@ -107,7 +102,6 @@ function displayRandomVideo() {
         </a>
     `;
 }
-
 
 // Créer les boutons rotatifs pour chaque catégorie
 function createRotatingButtons() {
@@ -147,4 +141,5 @@ function createRotatingButtons() {
 document.addEventListener("DOMContentLoaded", () => {
     loadVideos();
     createRotatingButtons();
+    randomVideoButton.addEventListener("click", displayRandomVideo); // Ajout de l'événement au bouton
 });
