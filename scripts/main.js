@@ -142,4 +142,19 @@ document.addEventListener("DOMContentLoaded", () => {
     loadVideos();
     createRotatingButtons();
     randomVideoButton.addEventListener("click", displayRandomVideo); // Ajout de l'événement au bouton
+
+    const fireContainer = document.querySelector(".fire-container");
+
+    const fireWidth = 100; // Largeur de chaque GIF
+    const screenWidth = window.innerWidth;
+    const numFlames = Math.ceil(screenWidth / fireWidth);
+
+    for (let i = 0; i < numFlames; i++) {
+        const flame = document.createElement("img");
+        flame.src = "assets/flamme2.gif";
+        flame.alt = "Flamme";
+        flame.className = "fire-gif";
+        fireContainer.appendChild(flame);
+    }
+
 });

@@ -186,3 +186,30 @@ header h1 {
 .youtube-link:hover {
     background-color: #e63900;
 }
+
+.fire-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* S'étend sur toute la largeur de l'écran */
+    display: flex;
+    /* Active l'alignement flexible */
+    justify-content: space-between;
+    /* Espacement régulier des flammes */
+    align-items: flex-end;
+    /* Aligne les flammes en bas */
+    z-index: 10;
+    /* Assurez-vous que c'est au-dessus des autres contenus */
+    overflow: hidden;
+    /* Empêche les débordements */
+    background-color: transparent;
+    /* Fond transparent pour les flammes */
+}
+
+.fire-gif {
+    width: 100px;
+    /* Taille du GIF */
+    height: auto;
+    /* Conserve les proportions */
+}
