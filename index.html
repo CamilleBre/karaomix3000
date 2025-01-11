@@ -1,33 +1,115 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karaomix 3000</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Karaomix 3000 - Authentification</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .auth-container {
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2.5em;
+            color: #ffdc73;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h1 img {
+            width: 50px;
+            height: 50px;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 300px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #ffae42;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        input {
+            width: calc(100% - 22px);
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ff4500;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+        }
+
+        input::placeholder {
+            color: #666;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e63900;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>Karaomix 3000</h1>
-        </header>
-
-        <!-- Section des filtres -->
-        <section id="filtersContainer">
-            <!-- Les filtres dynamiques seront ajoutés ici par JavaScript -->
-        </section>
-
-        <!-- Boutons de filtrage -->
-        <div id="rotatingButtonsContainer"></div>
-
-        <!-- Lecture vidéo YouTube -->
-        <section id="videoSection">
-            <!-- Bouton pour afficher une vidéo aléatoire -->
-            <button id="randomVideoButton">Prochaine chanson !</button>
-            <!-- Conteneur pour la vidéo YouTube -->
-            <div id="videoContainer"></div>
-        </section>
+    <div class="auth-container">
+        <h1>
+            <img src="assets/flamme3.gif" alt="Flamme gauche">
+            Bienvenue
+            <img src="assets/flamme3.gif" alt="Flamme droite">
+        </h1>
+        <form id="auth-form">
+            <input type="text" id="username" placeholder="Nom d'utilisateur" required>
+            <input type="password" id="password" placeholder="Mot de passe" required>
+            <button type="submit">Se connecter</button>
+        </form>
     </div>
-    <script src="scripts/main.js"></script>
+    <script>
+        document.getElementById('auth-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Vous pouvez personnaliser ces valeurs pour les valider
+            const validUsername = "admin";
+            const validPassword = "1234";
+
+            if (username === validUsername && password === validPassword) {
+                window.location.href = "karaoke.html"; // Remplacez par la page suivante
+            } else {
+                alert("Nom d'utilisateur ou mot de passe incorrect.");
+            }
+        });
+    </script>
 </body>
+
 </html>

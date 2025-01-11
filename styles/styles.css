@@ -1,30 +1,36 @@
 /* Couleurs de contour */
 .rotating-button[data-position="0"] {
-    border-color: white; /* Blanc */
+    border-color: white;
+    /* Blanc */
 }
 
 .rotating-button[data-position="1"] {
-    border-color: #ffeb3b; /* Jaune */
+    border-color: #ffeb3b;
+    /* Jaune */
 }
 
 .rotating-button[data-position="2"] {
-    border-color: #ff9800; /* Orange */
+    border-color: #ff9800;
+    /* Orange */
 }
 
 .rotating-button[data-position="3"] {
-    border-color: #f44336; /* Rouge */
+    border-color: #f44336;
+    /* Rouge */
 }
 
 /* Conteneur général */
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background: url('../assets/flamme1.gif');
-    background-size: cover;
+    background-color: #000;
+    /* Fond noir uni */
     margin: 0;
     padding: 0;
-    background-color: #ff7f50; /* Fond orange */
     text-align: center;
-    color: #ffffff; /* Texte blanc */
+    color: #ffffff;
+    /* Texte blanc */
+    cursor: url('assets/cursor.gif'), auto;
+    /* Curseur personnalisé avec fallback */
 }
 
 /* Conteneur principal */
@@ -39,7 +45,8 @@ header h1 {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 2px 2px #ff4500; /* Effet d'ombre */
+    text-shadow: 2px 2px #ff4500;
+    /* Effet d'ombre */
 }
 
 /* Conteneur des catégories de boutons rotatifs */
@@ -80,7 +87,8 @@ header h1 {
     align-items: center;
     transition: transform 0.5s ease, border-color 0.3s ease;
     cursor: pointer;
-    border: 5px solid #fff; /* Cercle blanc par défaut */
+    border: 5px solid #fff;
+    /* Cercle blanc par défaut */
 }
 
 /* Image de fond du bouton */
@@ -113,19 +121,25 @@ header h1 {
     padding: 15px 30px;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #ff7f50; /* Texte orange */
-    background-color: #ffffff; /* Bouton blanc */
+    color: #ff7f50;
+    /* Texte orange */
+    background-color: #ffffff;
+    /* Bouton blanc */
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Effet 3D */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Effet 3D */
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #randomVideoButton:hover {
-    background-color: #ff4500; /* Couleur plus vive au survol */
-    color: #ffffff; /* Texte blanc */
-    transform: scale(1.1); /* Légère mise en avant */
+    background-color: #ff4500;
+    /* Couleur plus vive au survol */
+    color: #ffffff;
+    /* Texte blanc */
+    transform: scale(1.1);
+    /* Légère mise en avant */
 }
 
 #videoContainer {
