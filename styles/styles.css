@@ -181,10 +181,16 @@ header h1 {
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s;
+
+    position: relative;
+    /* Important pour le z-index */
+    z-index: 10;
+    /* Plus élevé que les flammes */
 }
 
 .youtube-link:hover {
-    background-color: #e63900;
+    background-color: #e03e00;
+    /* Changement de couleur au survol */
 }
 
 .fire-container {
@@ -199,17 +205,17 @@ header h1 {
     /* Espacement régulier des flammes */
     align-items: flex-end;
     /* Aligne les flammes en bas */
-    z-index: 10;
-    /* Assurez-vous que c'est au-dessus des autres contenus */
+    z-index: 1;
+    /* Moins élevé que le bouton */
     overflow: hidden;
     /* Empêche les débordements */
     background-color: transparent;
     /* Fond transparent pour les flammes */
+    pointer-events: none;
+    /* Désactive l'interaction avec les flammes */
 }
 
 .fire-gif {
-    width: 100px;
-    /* Taille du GIF */
-    height: auto;
-    /* Conserve les proportions */
+    pointer-events: none;
+    /* Empêche les clics sur les flammes */
 }
