@@ -1,9 +1,8 @@
 // Sélection des éléments HTML
 const randomVideoButton = document.getElementById("randomVideoButton");
-const nextVideoButton = document.getElementById("nextVideoButton");
 const videoContainer = document.getElementById("videoContainer");
 const filtersContainer = document.getElementById("filtersContainer");
-const rotatingButtonContainer = document.getElementById("rotatingButtonsContainer");
+const slidersContainer = document.getElementById("slidersContainer");
 const fireContainer = document.querySelector(".fire-container");
 
 // Variables globales
@@ -12,13 +11,13 @@ let filteredVideos = [];
 let activeFilters = {
     language: new Set(),
     categories: new Set(["setlistTMX", "lesbianAnthem"]), // Actifs par défaut
-    rotatingValues: {} // Pour stocker les valeurs des boutons rotatifs
+    sliderValues: {} // Pour stocker les valeurs des sliders
 };
 
 const categories = [
-    { name: "difficulty", values: ["", "Facile", "Ça passe", "Hardcore"] },
-    { name: "cheeseFactor", values: ["", "Subtil", "Crémeux", "Coulant"] },
-    { name: "unexpectedFactor", values: ["", "Culte", "Prévisible", "Surprise garantie"] }
+    { name: "difficulty", label: "Difficulté", values: ["Hardcore", "Ça passe", "Facile", ""] },
+    { name: "cheeseFactor", label: "Cheese Factor", values: ["Coulant", "Crémeux", "Subtil", ""] },
+    { name: "unexpectedFactor", label: "Effet WoW", values: ["Surprise garantie", "Prévisible", "Culte", ""] }
 ];
 
 // Charger les vidéos depuis un fichier JSON
@@ -29,7 +28,7 @@ async function loadVideos() {
         filteredVideos = allVideos; // Initialise avec toutes les vidéos
         console.log("Vidéos chargées :", allVideos);
         createFilters(allVideos);
-        createRotatingButtons();
+        createSliders();
     } catch (error) {
         console.error("Erreur lors du chargement des vidéos :", error);
     }
@@ -52,23 +51,20 @@ function createFilters(videos) {
         button.addEventListener("click", () => toggleFilter("language", language, button));
         languageFilters.appendChild(button);
     });
-    console.log("Filtres de langues créés :", [...activeFilters.language]);
 
-    // Filtres pour Setlist TMX (actif par défaut)
+    // Filtres pour Setlist TMX
     const setlistButton = document.createElement("button");
     setlistButton.className = "filter-button active";
     setlistButton.innerText = "Setlist TMX";
     setlistButton.addEventListener("click", () => toggleFilter("categories", "setlistTMX", setlistButton));
     categoryFilters.appendChild(setlistButton);
 
-    // Filtres pour Lesbian Anthems (actif par défaut)
+    // Filtres pour Lesbian Anthems
     const lesbianButton = document.createElement("button");
     lesbianButton.className = "filter-button active";
     lesbianButton.innerText = "Lesbian Anthems";
     lesbianButton.addEventListener("click", () => toggleFilter("categories", "lesbianAnthem", lesbianButton));
     categoryFilters.appendChild(lesbianButton);
-
-    console.log("Filtres de catégories créés :", [...activeFilters.categories]);
 }
 
 // Gestion de l'activation/désactivation des filtres
@@ -87,61 +83,65 @@ function toggleFilter(filterType, filterValue, button) {
     applyFilters();
 }
 
-// Créer les boutons rotatifs pour chaque catégorie
-function createRotatingButtons() {
+// Crée les sliders pour chaque catégorie
+function createSliders() {
+    slidersContainer.innerHTML = ""; // Nettoie le conteneur avant de créer les sliders
+
     categories.forEach(category => {
-        const categoryContainer = document.createElement("div");
-        categoryContainer.classList.add("category-container");
+        const sliderContainer = document.createElement("div");
+        sliderContainer.classList.add("slider-container");
 
-        const categoryTitle = document.createElement("h3");
-        categoryTitle.classList.add("category-title");
-        categoryTitle.textContent = category.name.charAt(0).toUpperCase() + category.name.slice(1).replace(/_/g, " ");
-        categoryContainer.appendChild(categoryTitle);
+        // Label du slider
+        const label = document.createElement("label");
+        label.classList.add("slider-label");
+        label.innerText = category.label;
+        label.setAttribute("for", `slider-${category.name}`);
+        sliderContainer.appendChild(label);
 
-        const button = document.createElement("div");
-        button.classList.add("rotating-button");
-        button.dataset.position = 0;
+        // Slider input
+        const slider = document.createElement("input");
+        slider.type = "range";
+        slider.id = `slider-${category.name}`;
+        slider.min = 0;
+        slider.max = category.values.length - 1;
+        slider.value = category.values.length - 1; // Par défaut sur blanc (pas de filtre)
+        slider.classList.add("category-slider");
 
-        const buttonText = document.createElement("span");
-        buttonText.textContent = category.values[0];
-        button.appendChild(buttonText);
+        // Valeur affichée sous le slider
+        const sliderValue = document.createElement("span");
+        sliderValue.classList.add("slider-value");
+        sliderValue.innerText = category.values[category.values.length - 1]; // Affiche "blanc" au début
 
-        // Enregistre la valeur par défaut dans activeFilters
-        activeFilters.rotatingValues[category.name] = category.values[0];
-
-        button.addEventListener("click", () => {
-            let currentPosition = parseInt(button.dataset.position, 10);
-            currentPosition = (currentPosition + 1) % category.values.length;
-            button.dataset.position = currentPosition;
-
-            const newValue = category.values[currentPosition];
-            buttonText.textContent = newValue;
-
-            // Met à jour activeFilters avec la nouvelle valeur
-            activeFilters.rotatingValues[category.name] = newValue;
-
-            console.log(`Valeur du bouton ${category.name} modifiée :`, newValue);
+        // Gère l'événement `input` pour déplacer le curseur
+        slider.addEventListener("input", () => {
+            const selectedValue = category.values[slider.value];
+            sliderValue.innerText = selectedValue; // Met à jour l'affichage
+            activeFilters.sliderValues[category.name] = selectedValue === "" ? null : selectedValue;
+            console.log(`Valeur du slider ${category.name} :`, activeFilters.sliderValues[category.name]);
             applyFilters();
         });
 
-        categoryContainer.appendChild(button);
-        rotatingButtonContainer.appendChild(categoryContainer);
+        // Ajout des éléments au DOM
+        sliderContainer.appendChild(slider);
+        sliderContainer.appendChild(sliderValue);
+        slidersContainer.appendChild(sliderContainer);
+
+        // Initialise les filtres
+        activeFilters.sliderValues[category.name] = null;
     });
 }
 
-// Ajuster dynamiquement le nombre de flammes
+// Ajuste dynamiquement le nombre de flammes
 function adjustFlames() {
-    const flameWidth = 100; // Largeur approximative d'une flamme
+    const flameWidth = 100;
     const screenWidth = window.innerWidth;
     const numFlames = Math.ceil(screenWidth / flameWidth);
 
-    // Supprime les flammes existantes
-    fireContainer.innerHTML = "";
+    fireContainer.innerHTML = ""; // Supprime les flammes existantes
 
-    // Ajoute les flammes nécessaires
     for (let i = 0; i < numFlames; i++) {
         const flame = document.createElement("img");
-        flame.src = "assets/flamme2.gif"; // Chemin vers l'image des flammes
+        flame.src = "assets/flamme2.gif";
         flame.alt = "Flamme";
         flame.className = "fire-gif";
         fireContainer.appendChild(flame);
@@ -155,24 +155,15 @@ function applyFilters() {
     console.log("Application des filtres :", activeFilters);
 
     filteredVideos = allVideos.filter(video => {
-        console.log("Vidéo analysée :", video);
-
-        // Vérifie si la langue correspond
         const matchesLanguage = activeFilters.language.size === 0 || activeFilters.language.has(video.language);
-
-        // Vérifie le filtre Setlist TMX
-        const matchesSetlist = activeFilters.categories.has("setlistTMX") ? video.setlistTMX === true : true;
-
-        // Vérifie le filtre Lesbian Anthem
-        const matchesLesbian = activeFilters.categories.has("lesbianAnthem") ? video.lesbianAnthem === true : true;
-
-        // Vérifie les valeurs des boutons rotatifs
-        const matchesRotatingValues = Object.entries(activeFilters.rotatingValues).every(([key, value]) => {
-            if (!value || value === "") return true;
+        const matchesSetlist = activeFilters.categories.has("setlistTMX") ? video.setlistTMX === true : video.setlistTMX === false;
+        const matchesLesbian = activeFilters.categories.has("lesbianAnthem") ? video.lesbianAnthem === true : video.lesbianAnthem === false;
+        const matchesSliders = Object.entries(activeFilters.sliderValues).every(([key, value]) => {
+            if (value === null) return true;
             return video[key] === value;
         });
 
-        return matchesLanguage && matchesSetlist && matchesLesbian && matchesRotatingValues;
+        return matchesLanguage && matchesSetlist && matchesLesbian && matchesSliders;
     });
 
     console.log("Vidéos après filtrage :", filteredVideos);
@@ -189,7 +180,6 @@ function displayRandomVideo() {
 
     const randomIndex = Math.floor(Math.random() * filteredVideos.length);
     const selectedVideo = filteredVideos[randomIndex];
-    console.log("Vidéo sélectionnée :", selectedVideo);
 
     videoContainer.innerHTML = `
         <h2>${selectedVideo.title}</h2>
@@ -206,11 +196,14 @@ function displayRandomVideo() {
 
 // Appel au chargement de la page
 document.addEventListener("DOMContentLoaded", () => {
-    loadVideos();
-    adjustFlames();
-    randomVideoButton.addEventListener("click", displayRandomVideo);
-    nextVideoButton.addEventListener("click", displayRandomVideo);
+    adjustFlames(); // Ajuste les flammes au chargement
 
-    // Ajuster les flammes au redimensionnement de la fenêtre
-    window.addEventListener("resize", adjustFlames);
+    loadVideos().then(() => {
+        createSliders(); // Ajoute les sliders
+        applyFilters(); // Applique les filtres par défaut
+    });
+
+    randomVideoButton.addEventListener("click", displayRandomVideo);
+
+    window.addEventListener("resize", adjustFlames); // Réajuste les flammes au redimensionnement
 });

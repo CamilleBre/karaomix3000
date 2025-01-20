@@ -219,3 +219,70 @@ header h1 {
     pointer-events: none;
     /* Empêche les clics sur les flammes */
 }
+
+/* Conteneur des sliders : alignement horizontal */
+#slidersContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Conteneur individuel de chaque slider */
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+    /* Espacement horizontal entre les sliders */
+    width: 100px;
+    /* Largeur égale pour tous */
+}
+
+/* Slider vertical */
+.category-slider {
+    writing-mode: vertical-lr;
+    /* Assure une direction verticale standard */
+    -webkit-appearance: none;
+    appearance: none;
+    height: 200px;
+    /* Hauteur du slider */
+    width: 20px;
+    /* Largeur */
+    background: linear-gradient(to top, #ffffff, #ffeb3b, #ff9800, #f44336);
+    border-radius: 10px;
+    outline: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* Bouton de contrôle du slider */
+.category-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: #000;
+    /* Bouton noir */
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.category-slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    background: #000;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+/* Valeur affichée sous le slider */
+.slider-value {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #ffffff;
+    /* Texte blanc */
+}
