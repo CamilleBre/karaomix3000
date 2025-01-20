@@ -1,0 +1,722 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=nj8r7daP3Hs",
+    "title": "Tout doucement",
+    "artist": "Bibie",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "80s"
+    ],
+    "tags": [
+      "classic"
+    ],
+    "mood": "Romantic chill",
+    "difficulty": "Easy",
+    "era": "80s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Prévisible",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=rpaXdIwoSEE",
+    "title": "Le monde est stone",
+    "artist": "Starmania",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "musical",
+      "classic"
+    ],
+    "tags": [],
+    "mood": "Melancholic Drama",
+    "difficulty": "Ça passe",
+    "era": "70s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Larmes garanties",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/embed/5ZV4Hr7h6aE?si=Cv89mGrEQoxAQd9F",
+    "title": "Pour que tu m’aimes encore",
+    "artist": "Céline Dion",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "ballad",
+      "90s"
+    ],
+    "tags": [],
+    "mood": "Melancholic Drama",
+    "difficulty": "Hardcore",
+    "era": "90s",
+    "cheeseFactor": "Kitsch",
+    "unexpectedFactor": "Prévisible",
+    "heartbreakLevel": "Larmes garanties",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=_dQu1TD9gkw",
+    "title": "Sensualité",
+    "artist": "Axelle Red",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "90s"
+    ],
+    "tags": [],
+    "mood": "Romantic chill",
+    "difficulty": "Ça passe",
+    "era": "90s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": true
+  },
+  {
+    "url": "https://www.youtube.com/embed/rMSQwIp4Jg8?si=fimLM79SWNSsEdID",
+    "title": "Someone like you",
+    "artist": "Adele",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "ballad",
+      "pop"
+    ],
+    "tags": [],
+    "mood": "Melancholic Drama",
+    "difficulty": "Hardcore",
+    "era": "2010s",
+    "cheeseFactor": "No",
+    "unexpectedFactor": "Prévisible",
+    "heartbreakLevel": "Larmes garanties",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/embed/kk9XD6EB1X4?si=Jv3k5vmJKi8jy5DU",
+    "title": "Popcorn salé",
+    "artist": "Santa",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "modern"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Easy",
+    "era": "2020s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "très chelou",
+    "lesbianAnthem": true
+  },
+  {
+    "url": "https://www.youtube.com/embed/Uo81UuRSYlo?si=ypr3giOoqypU5R83",
+    "title": "Mourir sur scène",
+    "artist": "Dalida",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "classic",
+      "ballad"
+    ],
+    "tags": [],
+    "mood": "Melancholic Drama",
+    "difficulty": "Hardcore",
+    "era": "80s",
+    "cheeseFactor": "Kitsch",
+    "unexpectedFactor": "Prévisible",
+    "heartbreakLevel": "Larmes garanties",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/embed/ipvq9kUvXj4?si=ei7H2pSlyEkRwT6o",
+    "title": "Ma philosophie",
+    "artist": "Amel Bent",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "R&B"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Ça passe",
+    "era": "2000s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/embed/niAjGXH95V4?si=a7OGwHX09RxEosg_",
+    "title": "Chanson sur ma drôle de vie",
+    "artist": "Véronique Sanson",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "classic",
+      "ballad"
+    ],
+    "tags": [],
+    "mood": "Melancholic Drama",
+    "difficulty": "Ça passe",
+    "era": "70s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Larmes garanties",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=nturlhtt7WA",
+    "title": "Back to black",
+    "artist": "Amy Winehouse",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "soul",
+      "pop"
+    ],
+    "tags": [],
+    "mood": "Melancholic Drama",
+    "difficulty": "Hardcore",
+    "era": "2000s",
+    "cheeseFactor": "No",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Larmes garanties",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=sLkaNT0y7C4",
+    "title": "Umbrella",
+    "artist": "Rihanna & Jay-Z",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "r&b"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Ça passe",
+    "era": "2000s",
+    "cheeseFactor": "No",
+    "unexpectedFactor": "Tube",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": true
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=gqYFhzRHB50",
+    "title": "Whenever, wherever",
+    "artist": "Shakira",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "dance"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Easy",
+    "era": "2000s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=w7Zlj7OZcuQ",
+    "title": "What's Up?",
+    "artist": "4 Non Blondes",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "rock",
+      "90s"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Easy",
+    "era": "90s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=7fCMws3U2zE",
+    "title": "Dancing queen",
+    "artist": "ABBA",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "disco"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Easy",
+    "era": "70s",
+    "cheeseFactor": "Kitsch",
+    "unexpectedFactor": "Prévisible",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=kAJz7c97Cyo",
+    "title": "Baby One More Time",
+    "artist": "Britney Spears",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "90s"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Easy",
+    "era": "90s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Tube",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=wGSO-68f3Nk",
+    "title": "La boulette",
+    "artist": "Diam’s",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "rap",
+      "hip-hop"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Ça passe",
+    "era": "2000s",
+    "cheeseFactor": "No",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=l3iEnBThkIc",
+    "title": "All I want for Christmas is you",
+    "artist": "Mariah Carey",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "Christmas"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Easy",
+    "era": "90s",
+    "cheeseFactor": "Kitsch",
+    "unexpectedFactor": "Tube",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Yc3uwKzBmrI",
+    "title": "L’été est mort",
+    "artist": "Kalika",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "modern"
+    ],
+    "tags": [],
+    "mood": "Melancholic Drama",
+    "difficulty": "Ça passe",
+    "era": "2020s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": true
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=r2ZEOPfFM-I&list=PLzxj2EAd9mFRKYsfsf-GakTaeCToAiacx&index=6",
+    "title": "Garçon",
+    "artist": "Koxie",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "rap"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Easy",
+    "era": "2000s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": true
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=jtjLp0qpYPM",
+    "title": "Au soleil",
+    "artist": "Jenifer",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "2000s"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Easy",
+    "era": "2000s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Prévisible",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=hsntXJWhKWw",
+    "title": "Femme de couleur",
+    "artist": "Shy’m",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "R&B"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Ça passe",
+    "era": "2010s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": true
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=GsFlbMS7UIc",
+    "title": "Bad guy",
+    "artist": "Billie Eilish",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "alternative"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Ça passe",
+    "era": "2010s",
+    "cheeseFactor": "No",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "un peu chelou",
+    "lesbianAnthem": true
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=zqRqZ73VoXM",
+    "title": "Petite soeur",
+    "artist": "Lââm",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "R&B"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Ça passe",
+    "era": "2000s",
+    "cheeseFactor": "No",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=mU877_X2FSk",
+    "title": "Toutes les femmes de ta vie",
+    "artist": "L5",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "girl group"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Easy",
+    "era": "2000s",
+    "cheeseFactor": "Kitsch",
+    "unexpectedFactor": "Prévisible",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=aikmG6SnzVY",
+    "title": "Comme des enfants",
+    "artist": "Coeur de pirate",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "indie"
+    ],
+    "tags": [],
+    "mood": "Romantic chill",
+    "difficulty": "Easy",
+    "era": "2000s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": true
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=lOThDs3OQ60",
+    "title": "Tu trouveras",
+    "artist": "Natasha St Pier",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "ballad"
+    ],
+    "tags": [],
+    "mood": "Romantic chill",
+    "difficulty": "Easy",
+    "era": "2000s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Prévisible",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=jRHPhtXh97U",
+    "title": "Je serai (ta meilleure amie)",
+    "artist": "Lorie",
+    "language": "French",
+    "setThermomix": false,
+    "categories": [
+      "pop"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Easy",
+    "era": "2000s",
+    "cheeseFactor": "Kitsch",
+    "unexpectedFactor": "Prévisible",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=nK9hD9_SAdU",
+    "title": "Levitating",
+    "artist": "Dua Lipa",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "dance"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Easy",
+    "era": "2020s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Tube",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=b3iox_qUaUE&list=PL8D4Iby0Bmm-uQIcbRfHeUMd_YDSZDA39&index=5",
+    "title": "Chandelier",
+    "artist": "Sia",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "indie"
+    ],
+    "tags": [],
+    "mood": "Melancholic Drama",
+    "difficulty": "Ça passe",
+    "era": "2010s",
+    "cheeseFactor": "No",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Cœur brisé à 30%",
+    "weirdness": "un peu chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=C3y6jGCXiUA&list=PL8D4Iby0Bmm-uQIcbRfHeUMd_YDSZDA39&index=11",
+    "title": "Drivers licence",
+    "artist": "Olivia Rodrigo",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "ballad"
+    ],
+    "tags": [],
+    "mood": "Melancholic Drama",
+    "difficulty": "Easy",
+    "era": "2020s",
+    "cheeseFactor": "No",
+    "unexpectedFactor": "Surprise garantie",
+    "heartbreakLevel": "Larmes garanties",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=7BfhCUB_YkI&list=PL8D4Iby0Bmm-uQIcbRfHeUMd_YDSZDA39&index=21",
+    "title": "7 rings",
+    "artist": "Ariana Grande",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "R&B"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Ça passe",
+    "era": "2020s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Prévisible",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=MGblJggENS4",
+    "title": "Starships",
+    "artist": "Nicki Minaj",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "hip-hop",
+      "pop"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Easy",
+    "era": "2010s",
+    "cheeseFactor": "Kitsch",
+    "unexpectedFactor": "Prévisible",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=fO4wsNsXtDg",
+    "title": "Flowers",
+    "artist": "Miley Cyrus",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "country"
+    ],
+    "tags": [],
+    "mood": "Romantic chill",
+    "difficulty": "Easy",
+    "era": "2020s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Prévisible",
+    "heartbreakLevel": "Cœur brisé à 30%",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": false
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=KXs5tbzSlFQ",
+    "title": "Don’t speak",
+    "artist": "No doubt",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "rock",
+      "ska"
+    ],
+    "tags": [],
+    "mood": "Melancholic Drama",
+    "difficulty": "Easy",
+    "era": "90s",
+    "cheeseFactor": "No",
+    "unexpectedFactor": "Prévisible",
+    "heartbreakLevel": "Larmes garanties",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": true
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=2Qq0hEUmnRY&list=PL8D4Iby0Bmm-uQIcbRfHeUMd_YDSZDA39&index=99",
+    "title": "I kissed a girl",
+    "artist": "Katy Perry",
+    "language": "English",
+    "setThermomix": false,
+    "categories": [
+      "pop",
+      "dance"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Easy",
+    "era": "2000s",
+    "cheeseFactor": "Kitsch",
+    "unexpectedFactor": "Prévisible",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": true
+  },
+  {
+    "url": "https://www.youtube.com/embed/kyrspvxvqCY?si=AnPNnPT4WYyFrD6r",
+    "title": "All the Things She Said",
+    "artist": "t.A.T.u.",
+    "language": "English",
+    "setThermomix": true,
+    "categories": [
+      "pop",
+      "dance"
+    ],
+    "tags": [],
+    "mood": "Time to party",
+    "difficulty": "Easy",
+    "era": "2000s",
+    "cheeseFactor": "Plaisir coupable",
+    "unexpectedFactor": "Prévisible",
+    "heartbreakLevel": "Pas triste",
+    "weirdness": "pas chelou",
+    "lesbianAnthem": true
+  }
+]

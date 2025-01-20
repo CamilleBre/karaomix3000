@@ -23,7 +23,7 @@ const categories = [
 // Charger les vidéos depuis un fichier JSON
 async function loadVideos() {
     try {
-        const response = await fetch("videos_test1.json");
+        const response = await fetch("videos.json");
         allVideos = await response.json();
         filteredVideos = allVideos; // Initialise avec toutes les vidéos
         console.log("Vidéos chargées :", allVideos);
@@ -62,7 +62,7 @@ function createFilters(videos) {
     // Filtres pour Lesbian Anthems
     const lesbianButton = document.createElement("button");
     lesbianButton.className = "filter-button active";
-    lesbianButton.innerText = "Lesbian Anthems";
+    lesbianButton.innerText = "Hymne lesbien";
     lesbianButton.addEventListener("click", () => toggleFilter("categories", "lesbianAnthem", lesbianButton));
     categoryFilters.appendChild(lesbianButton);
 }
@@ -133,7 +133,7 @@ function createSliders() {
 
 // Ajuste dynamiquement le nombre de flammes
 function adjustFlames() {
-    const flameWidth = 100;
+    const flameWidth = 50;
     const screenWidth = window.innerWidth;
     const numFlames = Math.ceil(screenWidth / flameWidth);
 
