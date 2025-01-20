@@ -28,6 +28,13 @@ header h1 {
     /* Effet d'ombre */
 }
 
+header .helice {
+    width: 100px;
+    /* Ajustez la taille selon vos besoins */
+    height: auto;
+    animation: spin 2s linear infinite;
+    /* Animation de rotation */
+}
 
 /* Conteneur de chaque bouton avec clé et valeur */
 .category-container {

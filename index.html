@@ -8,11 +8,12 @@
 
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', Arial, sans-serif;
             text-align: center;
             background-color: #000;
             color: #fff;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -21,13 +22,32 @@
 
         .auth-container {
             text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border: 2px solid #ffae42;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+            width: 300px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         h1 {
-            margin-top: 0;
-            font-size: 2.5em;
+            font-size: 2.5rem;
             color: #ffdc73;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+            margin-bottom: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -35,46 +55,68 @@
         }
 
         h1 img {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
         }
 
         form {
-            margin: 0 auto;
-            width: 300px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            border: 1px solid #ffae42;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin-top: 10px;
         }
 
         input {
-            width: calc(100% - 22px);
+            width: calc(100% - 20px);
             margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ff4500;
-            border-radius: 5px;
+            padding: 12px;
+            border: 1px solid #ffae42;
+            border-radius: 8px;
             background: rgba(255, 255, 255, 0.9);
             color: #333;
+            font-size: 1rem;
         }
 
         input::placeholder {
             color: #666;
+            font-style: italic;
         }
 
         button {
-            padding: 10px 15px;
+            width: 100%;
+            padding: 12px 20px;
+            font-size: 1.2rem;
             background-color: #ff4500;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: bold;
         }
 
         button:hover {
             background-color: #e63900;
+            transform: scale(1.05);
+        }
+
+        .logo {
+            margin-top: 30px;
+            width: 250px;
+            height: auto;
+        }
+
+        footer {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #ffdc73;
+        }
+
+        footer a {
+            color: #ffdc73;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -92,6 +134,7 @@
             <button type="submit">Se connecter</button>
         </form>
     </div>
+    <img src="assets/logo.png" alt="Karaomix Logo" class="logo">
     <script>
         document.getElementById('auth-form').addEventListener('submit', function (event) {
             event.preventDefault();
@@ -99,12 +142,11 @@
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
-            // Vous pouvez personnaliser ces valeurs pour les valider
             const validUsername = "admin";
             const validPassword = "1234";
 
             if (username === validUsername && password === validPassword) {
-                window.location.href = "karaoke.html"; // Remplacez par la page suivante
+                window.location.href = "karaoke.html";
             } else {
                 alert("Nom d'utilisateur ou mot de passe incorrect.");
             }
