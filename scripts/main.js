@@ -10,7 +10,7 @@ let allVideos = [];
 let filteredVideos = [];
 let activeFilters = {
     language: new Set(),
-    categories: new Set(["setlistTMX", "lesbianAnthem"]), // Actifs par défaut
+    categories: new Set(), // Actifs par défaut
     sliderValues: {} // Pour stocker les valeurs des sliders
 };
 
@@ -38,30 +38,37 @@ async function loadVideos() {
 function createFilters(videos) {
     const languages = [...new Set(videos.map(video => video.language))];
 
-    filtersContainer.innerHTML = "<div id='languageFilters'></div><div id='categoryFilters'></div>";
+    // Ajouter un conteneur pour les filtres
+    filtersContainer.innerHTML = `
+        <h3>Filtres</h3>
+        <div id='languageFilters' class='filter-group'>
+        </div>
+        <div id='categoryFilters' class='filter-group'>
+        </div>
+    `;
     const languageFilters = document.getElementById("languageFilters");
     const categoryFilters = document.getElementById("categoryFilters");
 
     // Filtres par langue
     languages.forEach(language => {
         const button = document.createElement("button");
-        button.className = "filter-button active";
+        button.className = "filter-button inactive";
         button.innerText = language;
-        activeFilters.language.add(language);
+        //activeFilters.language.add(language);
         button.addEventListener("click", () => toggleFilter("language", language, button));
         languageFilters.appendChild(button);
     });
 
     // Filtres pour Setlist TMX
     const setlistButton = document.createElement("button");
-    setlistButton.className = "filter-button active";
+    setlistButton.className = "filter-button inactive";
     setlistButton.innerText = "Setlist TMX";
     setlistButton.addEventListener("click", () => toggleFilter("categories", "setlistTMX", setlistButton));
     categoryFilters.appendChild(setlistButton);
 
     // Filtres pour Lesbian Anthems
     const lesbianButton = document.createElement("button");
-    lesbianButton.className = "filter-button active";
+    lesbianButton.className = "filter-button inactive";
     lesbianButton.innerText = "Hymne lesbien";
     lesbianButton.addEventListener("click", () => toggleFilter("categories", "lesbianAnthem", lesbianButton));
     categoryFilters.appendChild(lesbianButton);
@@ -155,15 +162,22 @@ function applyFilters() {
     console.log("Application des filtres :", activeFilters);
 
     filteredVideos = allVideos.filter(video => {
+        // Si aucun filtre de langue n'est actif, accepte toutes les langues
         const matchesLanguage = activeFilters.language.size === 0 || activeFilters.language.has(video.language);
-        const matchesSetlist = activeFilters.categories.has("setlistTMX") ? video.setlistTMX === true : video.setlistTMX === false;
-        const matchesLesbian = activeFilters.categories.has("lesbianAnthem") ? video.lesbianAnthem === true : video.lesbianAnthem === false;
+
+        // Si aucune catégorie n'est active, accepte toutes les vidéos
+        const matchesCategories = activeFilters.categories.size === 0 || (
+            (activeFilters.categories.has("setlistTMX") ? video.setlistTMX === true : true) &&
+            (activeFilters.categories.has("lesbianAnthem") ? video.lesbianAnthem === true : true)
+        );
+
+        // Vérifie les sliders uniquement si une valeur spécifique est définie
         const matchesSliders = Object.entries(activeFilters.sliderValues).every(([key, value]) => {
-            if (value === null) return true;
+            if (value === null) return true; // Pas de filtre slider actif
             return video[key] === value;
         });
 
-        return matchesLanguage && matchesSetlist && matchesLesbian && matchesSliders;
+        return matchesLanguage && matchesCategories && matchesSliders;
     });
 
     console.log("Vidéos après filtrage :", filteredVideos);
