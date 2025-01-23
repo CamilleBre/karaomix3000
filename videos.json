@@ -260,7 +260,7 @@
         "difficulty": "Facile",
         "cheeseFactor": "Kitsch",
         "unexpectedFactor": "Prévisible",
-        "setlistTMX": false,
+        "setlistTMX": true,
         "lesbianAnthem": false
     },
     {
@@ -396,7 +396,7 @@
         "lesbianAnthem": true
     },
     {
-        "url": "https://www.youtube.com/watch?v=9sY-TsLXiDo",
+        "url": "https://www.youtube.com/watch?v=BVWUB8VMuiI",
         "title": "Girls Like Girls",
         "artist": "Hayley Kiyoko",
         "language": "English",
@@ -407,29 +407,18 @@
         "lesbianAnthem": true
     },
     {
-        "url": "https://www.youtube.com/watch?v=8VNV__k8hqE",
-        "title": "On brûlera",
-        "artist": "Pomme",
+        "url": "https://www.youtube.com/watch?v=rgmHOeVmnTk",
+        "title": "Balance ton quoi",
+        "artist": "Angèle",
         "language": "Français",
         "difficulty": "Facile",
         "cheeseFactor": "Subtil",
         "unexpectedFactor": "Prévisible",
         "setlistTMX": false,
-        "lesbianAnthem": true
+        "lesbianAnthem": false
     },
     {
-        "url": "https://www.youtube.com/watch?v=8VNV__k8hqE",
-        "title": "Ta reine",
-        "artist": "Angèle",
-        "language": "Français",
-        "difficulty": "Facile",
-        "cheeseFactor": "Coulant",
-        "unexpectedFactor": "Prévisible",
-        "setlistTMX": false,
-        "lesbianAnthem": true
-    },
-    {
-        "url": "https://www.youtube.com/watch?v=ZJL4UGSbeFg",
+        "url": "https://www.youtube.com/watch?v=FsUa8P-L2Ag",
         "title": "I Will Survive",
         "artist": "Gloria Gaynor",
         "language": "English",
@@ -440,7 +429,7 @@
         "lesbianAnthem": true
     },
     {
-        "url": "https://www.youtube.com/watch?v=PIb6AZdTr-A",
+        "url": "https://www.youtube.com/watch?v=-Fg7m1ZqkxI",
         "title": "Girls Just Want to Have Fun",
         "artist": "Cyndi Lauper",
         "language": "English",
@@ -451,7 +440,7 @@
         "lesbianAnthem": true
     },
     {
-        "url": "https://www.youtube.com/watch?v=qeMFqkcPYcg",
+        "url": "https://www.youtube.com/watch?v=mTW-Ut83PPU",
         "title": "Like a Prayer",
         "artist": "Madonna",
         "language": "English",
@@ -462,7 +451,7 @@
         "lesbianAnthem": true
     },
     {
-        "url": "https://www.youtube.com/watch?v=YgFyi74DVjc",
+        "url": "https://www.youtube.com/watch?v=xEQw0C0SYEI",
         "title": "Respect",
         "artist": "Aretha Franklin",
         "language": "English",
@@ -473,7 +462,7 @@
         "lesbianAnthem": true
     },
     {
-        "url": "https://www.youtube.com/watch?v=OBwS66EBUcY",
+        "url": "https://www.youtube.com/watch?v=n24s-klOW0c",
         "title": "Believe",
         "artist": "Cher",
         "language": "English",
@@ -484,7 +473,7 @@
         "lesbianAnthem": false
     },
     {
-        "url": "https://www.youtube.com/watch?v=QYZ9Ylr9Was",
+        "url": "https://www.youtube.com/watch?v=r_zEpnL6OSg",
         "title": "La grenade",
         "artist": "Clara Luciani",
         "language": "Français",
@@ -495,18 +484,7 @@
         "lesbianAnthem": false
     },
     {
-        "url": "https://www.youtube.com/watch?v=8nBFqZppIF0",
-        "title": "Balance ton quoi",
-        "artist": "Angèle",
-        "language": "Français",
-        "difficulty": "Facile",
-        "cheeseFactor": "Coulant",
-        "unexpectedFactor": "Prévisible",
-        "setlistTMX": false,
-        "lesbianAnthem": false
-    },
-    {
-        "url": "https://www.youtube.com/watch?v=JQbjS0_ZfJ0",
+        "url": "https://www.youtube.com/watch?v=J0cEAg03JK0",
         "title": "Amour censure",
         "artist": "Hoshi",
         "language": "Français",
@@ -517,7 +495,7 @@
         "lesbianAnthem": true
     },
     {
-        "url": "https://www.youtube.com/watch?v=K5KAc5CoCuk",
+        "url": "https://www.youtube.com/watch?v=7OUXBog_dsU",
         "title": "Djadja",
         "artist": "Aya Nakamura",
         "language": "Français",
@@ -528,7 +506,7 @@
         "lesbianAnthem": false
     },
     {
-        "url": "https://www.youtube.com/watch?v=6Ejga4kJUts",
+        "url": "https://www.youtube.com/watch?v=m8CEEkqQiiY",
         "title": "Zombie",
         "artist": "The Cranberries",
         "language": "English",
@@ -539,7 +517,7 @@
         "lesbianAnthem": false
     },
     {
-        "url": "https://www.youtube.com/watch?v=4ufY6fB_jgA",
+        "url": "https://www.youtube.com/watch?v=oj7y5UxFYqk",
         "title": "La Déclaration d'amour",
         "artist": "France Gall",
         "language": "Français",
@@ -550,7 +528,7 @@
         "lesbianAnthem": false
     },
     {
-        "url": "https://www.youtube.com/watch?v=VZ-oGLluGAc",
+        "url": "https://www.youtube.com/watch?v=DjkCfplHxww",
         "title": "Good Luck, Babe!",
         "artist": "Chappell Roan",
         "language": "English",
@@ -561,7 +539,7 @@
         "lesbianAnthem": true
     },
     {
-        "url": "https://www.youtube.com/watch?v=enI1sqCSLk8",
+        "url": "https://www.youtube.com/watch?v=H27JD2jDAyA",
         "title": "Lola",
         "artist": "Superbus",
         "language": "Français",
@@ -572,7 +550,7 @@
         "lesbianAnthem": true
     },
     {
-        "url": "https://www.youtube.com/watch?v=uLsjlOLNnJs",
+        "url": "https://www.youtube.com/watch?v=T-vUBXMwSME",
         "title": "Les Gens qui doutent",
         "artist": "Anne Sylvestre",
         "language": "Français",
@@ -625,5 +603,104 @@
         "unexpectedFactor": "Tube",
         "setlistTMX": false,
         "lesbianAnthem": true
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=ZxwOam6V2Q4",
+        "title": "Family Affair",
+        "artist": "Mary J. Blige",
+        "language": "English",
+        "difficulty": "Facile",
+        "cheeseFactor": "Subtil",
+        "unexpectedFactor": "Prévisible",
+        "setlistTMX": true,
+        "lesbianAnthem": false
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=1veIGBjg8xQ",
+        "title": "On the mountain",
+        "artist": "Ascendant Vierge",
+        "language": "Français",
+        "difficulty": "Modérée",
+        "cheeseFactor": "Subtil",
+        "unexpectedFactor": "Surprenant",
+        "setlistTMX": true,
+        "lesbianAnthem": false
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=0Sp1FNLtODA",
+        "title": "Hush Hush",
+        "artist": "The Pussycat Dolls",
+        "language": "English",
+        "difficulty": "Facile",
+        "cheeseFactor": "Subtil",
+        "unexpectedFactor": "Prévisible",
+        "setlistTMX": true,
+        "lesbianAnthem": false
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=ZEVN2zIvyww",
+        "title": "Heads Will Roll",
+        "artist": "Yeah Yeah Yeahs",
+        "language": "English",
+        "difficulty": "Modérée",
+        "cheeseFactor": "Subtil",
+        "unexpectedFactor": "Prévisible",
+        "setlistTMX": true,
+        "lesbianAnthem": false
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=l03SP0Q-mWM",
+        "title": "Let It Will Be",
+        "artist": "Madonna",
+        "language": "English",
+        "difficulty": "Modérée",
+        "cheeseFactor": "Subtil",
+        "unexpectedFactor": "Prévisible",
+        "setlistTMX": true,
+        "lesbianAnthem": false
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=6s6iROl2-yc",
+        "title": "(It Goes Like) Nanana",
+        "artist": "Peggy Gou",
+        "language": "English",
+        "difficulty": "Facile",
+        "cheeseFactor": "Subtil",
+        "unexpectedFactor": "Prévisible",
+        "setlistTMX": true,
+        "lesbianAnthem": false
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=THdF7WHTK6Y",
+        "title": "To My Love",
+        "artist": "Bomba Estéreo",
+        "language": "Español",
+        "difficulty": "Facile",
+        "cheeseFactor": "Subtil",
+        "unexpectedFactor": "Prévisible",
+        "setlistTMX": true,
+        "lesbianAnthem": false
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=frpfRwGv6KU",
+        "title": "Bring Me to Life",
+        "artist": "Evanescence",
+        "language": "English",
+        "difficulty": "Moyenne",
+        "cheeseFactor": "Subtil",
+        "unexpectedFactor": "Prévisible",
+        "setlistTMX": false,
+        "lesbianAnthem": false
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=uG60EZY-9o4",
+        "title": "Je l'aime à mourir (la quiero a morir)",
+        "artist": "Shakira",
+        "language": "Español",
+        "difficulty": "Facile",
+        "cheeseFactor": "Coulant",
+        "unexpectedFactor": "Prévisible",
+        "setlistTMX": false,
+        "lesbianAnthem": false
     }
 ]
